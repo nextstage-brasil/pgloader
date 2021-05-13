@@ -16,3 +16,9 @@ php pgloader.php -h localhost -u postgres -w 123456 -p 5432 -d my_database -s pu
     'n' => 'Tablename, case not use filename'
 
 As an output, a schema will be created and each CSV file within the directory will be a table. All fields will be of the text type to enable the second stage of data maintenance (done by you ;) )
+
+**Important:**
+
+It is necessary to have PHP installed (7.2+) with the PDO_PGSQL module enabled.
+
+https://www.php.net/manual/pt_BR/ref.pdo-pgsql.php
